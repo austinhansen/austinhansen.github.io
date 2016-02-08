@@ -77,8 +77,7 @@ p {
     color: #222;
 }
 
-ul.technologies {
-  list-style: none;
+.technologies {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
