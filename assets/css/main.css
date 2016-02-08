@@ -9,18 +9,14 @@
 
 .avatar-frame{border: 2px solid #c7b89e;}
 .avatar-frame,.avatar-frame img{
-    margin-top: -15%;
-    width: 450px;
-    height: 450px;
+    float: right;
+    width: 250px;
+    height: 250px;
+    margin-top: -4%;
+    margin-bottom: 10%;
     -webkit-border-radius: 270px; /* Saf3+, Chrome */
     border-radius: 270px; /* Opera 10.5, IE 9 */
     /*-moz-border-radius: 270px;  Disabled for FF1+ */
-}
-
-@media (max-width: 1199px) {
-  .avatar-frame,.avatar-frame img{
-    display: none;
-  }
 }
 
 body {
@@ -37,16 +33,26 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #333;
+}
+
+h2, h3 {
+  margin-top: 4rem;
 }
 
 .heading {
   color: #333;
+  margin-top: 8rem;
+}
+
+.skill-heading {
+  margin-top: 4rem;
 }
 
 .hero {
   color: white;
+  margin-top: 0rem;
 }
 
 h1 {
@@ -55,12 +61,10 @@ h1 {
 
 h3 {
 	color: #95a5a6;
-	font-weight: 400;
 }
 
 h4 {
 	color: #95a5a6;
-	font-weight: 400;
 	font-size: 20px;
 }
 
@@ -71,6 +75,13 @@ p {
     font-size: 18px;
     text-align: left;
     color: #222;
+}
+
+ul.technologies {
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 li {
@@ -156,11 +167,10 @@ i {
 #headerwrap {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
 	background-color: #3498db;
-	margin-top: -20px;
-	padding-top:200px;
+  padding-top: 60px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+  min-height: 260px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -183,14 +193,43 @@ i {
 	letter-spacing: 1px;
 }
 
+#headerwrap h2 {
+  font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+  .avatar-frame,.avatar-frame img{
+    width: 200px;
+    height: 200px;
+    margin-top: -16%;
+    margin-bottom: 4%;
+  }
+
+  #headerwrap {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .avatar-frame,.avatar-frame img{
+    margin-top: -22%;
+  }
+}
+
 @media (max-width: 960px) {
   #headerwrap {
-    padding-top: 90px;
+    padding-top: 23px;
     padding-left: 10%;
-    min-height: 450px;
   }
+
   #headerwrap h1 {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 845px) {
+  .avatar-frame,.avatar-frame img{
+    display:none;
   }
 }
 
